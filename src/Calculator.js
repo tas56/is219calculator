@@ -8,42 +8,39 @@ const Root = require('../src/Operations/Root');
 
 class Calculator {
 
-    static Calculations = new Array();
+    static Calculations = [];
 
     static AddCalculation(calculation){
         Calculator.Calculations.push(calculation);
     }
-    static GetLastCalculation() {
-        return this.Calculations[this.Calculations.length -1].value;
-    }
     static Sum(a,b){
         let calculation = Calculation.Create(a,b,Sum);
-        this.AddCalculation(Calculation);
+        this.AddCalculation(calculation);
         return calculation;
     }
     static Difference(a,b){
         let calculation = Calculation.Create(a,b,Difference);
-        this.AddCalculation(Calculation);
+        this.AddCalculation(calculation);
         return calculation;
     }
     static Product(a,b){
         let calculation = Calculation.Create(a,b,Product);
-        this.AddCalculation(Calculation);
+        this.AddCalculation(calculation);
         return calculation;
     }
     static Quotient(a,b){
         let calculation = Calculation.Create(a,b,Quotient);
-        this.AddCalculation(Calculation);
+        this.AddCalculation(calculation);
         return calculation;
     }
     static Exponentiation(a,b){
         let calculation = Calculation.Create(a,b,Exponentiation);
-        this.AddCalculation(Calculation);
+        this.AddCalculation(calculation);
         return calculation;
     }
     static Root(a,b){
         let calculation = Calculation.Create(a,b,Root);
-        this.AddCalculation(Calculation);
+        this.AddCalculation(calculation);
         return calculation;
     }
 

@@ -19,19 +19,13 @@ test('Calculator root function', () => {
     expect(Calculator.Root(4,2).GetResults()).toBe(2);
 });
 
-// test('Calculator adding to calculations', () => {
-//     let calculations = Calculator.Calculations;
-//     calculations = [];
-//     Calculator.Sum(1,2);
-//     Calculator.Product(1,2);
-//     Calculator.Exponentiation(1,2);
-//     Calculator.Difference(1,2);
-//     expect(calculations.length).toBe(4);
-// });
+test('Calculator adding to calculations', () => {
+    Calculator.Calculations = [];
+    Calculator.AddCalculation(1);
+    Calculator.Product(1,2);
+    Calculator.Exponentiation(1,2);
+    Calculator.Difference(1,2);
+    expect(Calculator.Calculations.length).toBe(4);
+});
 
-// test('Calculator get last calculation', () => {
-//     Calculator.Product(1,2);
-//     let CalculationObject = Calculator.GetLastCalculation();
-//     expect(CalculationObject.GetResults()).toBe(3);
-// });
 
