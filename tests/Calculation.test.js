@@ -7,40 +7,26 @@ const Exponentiation = require('../src/Operations/Exponentiation');
 const Root = require('../src/Operations/Root');
 
 test('Test of Calculation instantiation', () => {
-    let op = Sum;
-
-    let calculation = new Calculation(1,2,op);
+    let calculation = new Calculation(1,2,Sum);
     expect(calculation.a).toBe(1);
     expect(calculation.b).toBe(2);
-    expect(calculation.op).toBe(op);
+    expect(calculation.op).toBe(Sum);
 });
 test('Test results for sum function', () => {
-    let op = Sum;
-    let calculation = new Calculation(1,2,op);
-    expect(calculation.GetResults()).toBe(3);
+    expect(new Calculation(1,2,Sum).GetResults()).toBe(3);
 });
 test('Test results for difference function', () => {
-    let op = Difference;
-    let calculation = new Calculation(1,2,op);
-    expect(calculation.GetResults()).toBe(-1);
+    expect(new Calculation(1,2,Difference).GetResults()).toBe(-1);
 });
 test('Test results for product function', () => {
-    let op = Product;
-    let calculation = new Calculation(1,2,op);
-    expect(calculation.GetResults()).toBe(2);
+    expect(new Calculation(1,2,Product).GetResults()).toBe(2);
 });
 test('Test results for difference function', () => {
-    let op = Quotient;
-    let calculation = new Calculation(2,1,op);
-    expect(calculation.GetResults()).toBe(2);
+    expect(new Calculation(2,1,Quotient).GetResults()).toBe(2);
 });
 test('Test results for exponentiation function', () => {
-    let op = Exponentiation;
-    let calculation = new Calculation(2,2,op);
-    expect(calculation.GetResults()).toBe(4);
+    expect(new Calculation(2,2,Exponentiation).GetResults()).toBe(4);
 });
 test('Test results for root function', () => {
-    let op = Root;
-    let calculation = new Calculation(9,2,op);
-    expect(calculation.GetResults()).toBe(3);
+    expect(new Calculation(9,2,Root).GetResults()).toBe(3);
 });
