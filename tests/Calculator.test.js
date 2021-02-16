@@ -20,13 +20,13 @@ test('Calculator root function', () => {
 });
 
 // test('Calculator adding to calculations', () => {
-//     let result = Calculator.Quotient(1,2);
 //     let calculations = Calculator.Calculations;
-//
-//     calculations.forEach( (calc => {
-//         console.log(calc.GetResults());
-//     });
-//     expect(result.GetResults()).toBe(.5);
+//     calculations = [];
+//     Calculator.Sum(1,2);
+//     Calculator.Product(1,2);
+//     Calculator.Exponentiation(1,2);
+//     Calculator.Difference(1,2);
+//     expect(calculations.length).toBe(4);
 // });
 
 // test('Calculator get last calculation', () => {

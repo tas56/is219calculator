@@ -1,8 +1,8 @@
-const Calculation = require('./Models/Calculation');
-const Sum = require('./Operations/sum');
-const Difference = require('./Operations/difference');
-const Product = require('./Operations/product');
-const Quotient = require('./Operations/quotient');
+const Calculation = require('../src/Models/Calculation');
+const Sum = require('../src/Operations/Sum');
+const Difference = require('../src/Operations/Difference');
+const Product = require('../src/Operations/Product');
+const Quotient = require('../src/Operations/Quotient');
 const Exponentiation = require('../src/Operations/Exponentiation');
 const Root = require('../src/Operations/Root');
 
