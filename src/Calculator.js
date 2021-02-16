@@ -8,7 +8,7 @@ const Root = require('../src/Operations/Root');
 
 class Calculator {
 
-    static Calculations = [];
+    static Calculations = new Array();
 
     static AddCalculation(calculation){
         Calculator.Calculations.push(calculation);
