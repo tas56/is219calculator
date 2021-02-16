@@ -6,6 +6,10 @@ class Calculation {
         this.op = op;
     }
 
+    static Create(a,b,op){
+       return new Calculation(a,b,op);
+    }
+
     GetResults() {
         return this.op(this.a,this.b)
     }
